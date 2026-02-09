@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://gx0b8b3sgj8u" path="res://addons/better_marker_3d/better_marker_3d.gd" id="1_1fpko"]
 [ext_resource type="Texture2D" uid="uid://dj503eh8he7xx" path="res://mc_human_v1/miku_skin.png" id="2_1fpko"]
+[ext_resource type="Texture2D" uid="uid://brtrqwn3ecijl" path="res://misc/42skin.png" id="2_nfcce"]
 [ext_resource type="Script" uid="uid://d252swglxmudf" path="res://mc_human_v1/mc_human_v_1_tool.gd" id="2_obwld"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph68p"]
@@ -57,6 +58,15 @@ bind/5/pose = Transform3D(4.371139e-08, 0, -1, 0, -1.0000001, 0, -1, 0, -4.37113
 bind/6/name = &"LegR"
 bind/6/bone = -1
 bind/6/pose = Transform3D(4.371139e-08, 0, -1, 0, -1.0000001, 0, -1, 0, -4.371139e-08, 5.6824803e-09, 0.69867945, -0.13)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfcce"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("2_nfcce")
+texture_filter = 2
+texture_repeat = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lg8fi"]
 resource_name = "miku_bld_Mesh_3_001"
@@ -275,59 +285,72 @@ angle = 4.537856
 
 [node name="McHumanV1" type="Node3D" unique_id=1371768775]
 
-[node name="Markers" type="Node3D" parent="." unique_id=723668996]
+[node name="McHumanV1Tool" type="Marker3D" parent="." unique_id=951458696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0954869, 0)
+gizmo_extents = 0.0
+script = ExtResource("2_obwld")
+skin_texture = ExtResource("2_nfcce")
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="ActionController" type="Node3D" parent="." unique_id=723668996]
 metadata/_edit_lock_ = true
 
-[node name="Eyes" type="Marker3D" parent="Markers" unique_id=885787195]
+[node name="Eyes" type="Marker3D" parent="ActionController" unique_id=885787195]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1)
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(0.7176471, 0.37254903, 0.45882353, 1)
 gizmo_size = Vector3(0.1, 0.1, 0.1)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="Neck" type="Marker3D" parent="Markers" unique_id=1392612309]
+[node name="Neck" type="Marker3D" parent="ActionController" unique_id=1392612309]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4757924, 0)
-gizmo_extents = 0.5
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(2.4546682e-06, 0.7910037, 0.4262218, 1)
 gizmo_scale = 1.2
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="Hips" type="Marker3D" parent="Markers" unique_id=2099419932]
+[node name="Hips" type="Marker3D" parent="ActionController" unique_id=2099419932]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
-gizmo_extents = 0.5
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(2.4546682e-06, 0.7910037, 0.4262218, 1)
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="LeftArm" type="Marker3D" parent="Markers" unique_id=1395603268]
+[node name="LeftArm" type="Marker3D" parent="ActionController" unique_id=1395603268]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.3, 0.8, 0)
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="RightArm" type="Marker3D" parent="Markers" unique_id=2000287939]
+[node name="RightArm" type="Marker3D" parent="ActionController" unique_id=2000287939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0.8, 0)
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="LeftLeg" type="Marker3D" parent="Markers" unique_id=737487369]
+[node name="LeftLeg" type="Marker3D" parent="ActionController" unique_id=737487369]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13, 0, 0)
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="RightLeg" type="Marker3D" parent="Markers" unique_id=590384772]
+[node name="RightLeg" type="Marker3D" parent="ActionController" unique_id=590384772]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0, 0)
+gizmo_extents = 0.0
 script = ExtResource("1_1fpko")
 gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
 gizmo_scale = 0.7
@@ -387,71 +410,84 @@ bones/6/scale = Vector3(1, 0.99999994, 1)
 metadata/_edit_lock_ = true
 
 [node name="MeshRoot" type="Node3D" parent="Skeleton" unique_id=274989098]
+unique_name_in_owner = true
 metadata/_edit_lock_ = true
 
 [node name="Body" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=1673791050]
 mesh = SubResource("ArrayMesh_etsva")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Body Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=1770945883]
 mesh = SubResource("ArrayMesh_lg8fi")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Hat Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=426968163]
 mesh = SubResource("ArrayMesh_hrkd0")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Head" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=603971285]
 mesh = SubResource("ArrayMesh_1qeph")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Left Arm" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=837632608]
 mesh = SubResource("ArrayMesh_1kgf2")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Left Arm Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=54242893]
 mesh = SubResource("ArrayMesh_2xr38")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Left Leg" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=2118958687]
 mesh = SubResource("ArrayMesh_hbtqe")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Left Leg Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=218534936]
 mesh = SubResource("ArrayMesh_hvv2d")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Right Arm" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=2125181082]
 mesh = SubResource("ArrayMesh_geylf")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Right Arm Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=1633786890]
 mesh = SubResource("ArrayMesh_30u57")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Right Leg" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=7770001]
 mesh = SubResource("ArrayMesh_753fa")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Right Leg Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=602480890]
 mesh = SubResource("ArrayMesh_65y8d")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="CCDIKHips" type="CCDIK3D" parent="Skeleton" unique_id=1448582848]
 setting_count = 1
-settings/0/target_node = NodePath("../../Markers/Hips")
+settings/0/target_node = NodePath("../../ActionController/Hips")
 settings/0/root_bone_name = "Root"
 settings/0/root_bone = 0
 settings/0/end_bone_name = "Body_2"
@@ -468,7 +504,7 @@ metadata/_edit_lock_ = true
 
 [node name="CCDIKNeck" type="CCDIK3D" parent="Skeleton" unique_id=1774866376]
 setting_count = 1
-settings/0/target_node = NodePath("../../Markers/Neck")
+settings/0/target_node = NodePath("../../ActionController/Neck")
 settings/0/root_bone_name = "Body_2"
 settings/0/root_bone = 1
 settings/0/end_bone_name = "Head_2"
@@ -484,7 +520,7 @@ settings/0/joints/1/limitation = null
 metadata/_edit_lock_ = true
 
 [node name="LamEyes" type="LookAtModifier3D" parent="Skeleton" unique_id=1434595948]
-target_node = NodePath("../../Markers/Eyes")
+target_node = NodePath("../../ActionController/Eyes")
 bone_name = "Head_2"
 bone = 2
 use_angle_limitation = true
@@ -496,7 +532,7 @@ secondary_damp_threshold = 1.0
 metadata/_edit_lock_ = true
 
 [node name="LamLeftArm" type="LookAtModifier3D" parent="Skeleton" unique_id=581087793]
-target_node = NodePath("../../Markers/LeftArm")
+target_node = NodePath("../../ActionController/LeftArm")
 bone_name = "ArmL"
 bone = 3
 forward_axis = 2
@@ -504,7 +540,7 @@ primary_rotation_axis = 0
 metadata/_edit_lock_ = true
 
 [node name="LamRightArm" type="LookAtModifier3D" parent="Skeleton" unique_id=1108267130]
-target_node = NodePath("../../Markers/RightArm")
+target_node = NodePath("../../ActionController/RightArm")
 bone_name = "ArmR"
 bone = 4
 forward_axis = 2
@@ -512,7 +548,7 @@ primary_rotation_axis = 0
 metadata/_edit_lock_ = true
 
 [node name="LamLeftLeg" type="LookAtModifier3D" parent="Skeleton" unique_id=5286494]
-target_node = NodePath("../../Markers/LeftLeg")
+target_node = NodePath("../../ActionController/LeftLeg")
 bone_name = "LegL"
 bone = 5
 forward_axis = 2
@@ -520,12 +556,9 @@ primary_rotation_axis = 0
 metadata/_edit_lock_ = true
 
 [node name="LamRightLeg" type="LookAtModifier3D" parent="Skeleton" unique_id=23221907]
-target_node = NodePath("../../Markers/RightLeg")
+target_node = NodePath("../../ActionController/RightLeg")
 bone_name = "LegR"
 bone = 6
 forward_axis = 2
 primary_rotation_axis = 0
 metadata/_edit_lock_ = true
-
-[node name="McHumanV1Tool" type="Node" parent="." unique_id=100553539]
-script = ExtResource("2_obwld")

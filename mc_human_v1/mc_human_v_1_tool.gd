@@ -1,13 +1,12 @@
 @tool
-extends Node
+extends BetterMarker3D
 
 const SKIN_MATERIAL_TEMPLATE = preload("uid://dtvwc0h2qym6t")
-
-@onready var mesh_root: Node3D = $"../Skeleton/MeshRoot"
 
 @export var skin_texture: Texture2D:
 	set(tex):
 		skin_texture = tex
+		var mesh_root := get_node("%MeshRoot")
 		if mesh_root != null:
 			var material: StandardMaterial3D = null
 			if skin_texture != null:
