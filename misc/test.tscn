@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d3w36s1b47bsr"]
+
+[ext_resource type="Script" uid="uid://gx0b8b3sgj8u" path="res://addons/better_marker_3d/better_marker_3d.gd" id="1_x3k6o"]
+[ext_resource type="Shader" uid="uid://bjxu52j7wjk18" path="res://addons/better_marker_3d/dither_dissolve.gdshader" id="2_3ln47"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bbu8k"]
+render_priority = 0
+shader = ExtResource("2_3ln47")
+shader_parameter/opacity = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/dither_scale = 1.0
+
+[node name="Test" type="Node3D" unique_id=329324997]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1959571781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022126436, 0, -0.32770038)
+material = SubResource("ShaderMaterial_bbu8k")
+
+[node name="BetterMarker3D" type="Marker3D" parent="." unique_id=866820082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41992843, 0.539626, -1.1920929e-07)
+script = ExtResource("1_x3k6o")
+gizmo_size = Vector3(1, 0.1, 0.61)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"

@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://c4dxttpt8mx55"]
 
+[ext_resource type="Script" uid="uid://gx0b8b3sgj8u" path="res://addons/better_marker_3d/better_marker_3d.gd" id="1_1fpko"]
 [ext_resource type="Texture2D" uid="uid://dj503eh8he7xx" path="res://mc_human_v1/miku_skin.png" id="2_1fpko"]
 [ext_resource type="Script" uid="uid://d252swglxmudf" path="res://mc_human_v1/mc_human_v_1_tool.gd" id="2_obwld"]
 
@@ -277,28 +278,61 @@ angle = 4.537856
 [node name="Markers" type="Node3D" parent="." unique_id=723668996]
 metadata/_edit_lock_ = true
 
-[node name="Eyes" type="Marker3D" parent="Markers" unique_id=616270511]
+[node name="Eyes" type="Marker3D" parent="Markers" unique_id=885787195]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.7176471, 0.37254903, 0.45882353, 1)
+gizmo_size = Vector3(0.1, 0.1, 0.1)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="Neck" type="Marker3D" parent="Markers" unique_id=1483559741]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+[node name="Neck" type="Marker3D" parent="Markers" unique_id=1392612309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4757924, 0)
 gizmo_extents = 0.5
+script = ExtResource("1_1fpko")
+gizmo_color = Color(2.4546682e-06, 0.7910037, 0.4262218, 1)
+gizmo_scale = 1.2
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="Hips" type="Marker3D" parent="Markers" unique_id=1434802954]
+[node name="Hips" type="Marker3D" parent="Markers" unique_id=2099419932]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 gizmo_extents = 0.5
+script = ExtResource("1_1fpko")
+gizmo_color = Color(2.4546682e-06, 0.7910037, 0.4262218, 1)
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="LeftArm" type="Marker3D" parent="Markers" unique_id=468257536]
+[node name="LeftArm" type="Marker3D" parent="Markers" unique_id=1395603268]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.3, 0.8, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_scale = 0.7
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="RightArm" type="Marker3D" parent="Markers" unique_id=1666284245]
+[node name="RightArm" type="Marker3D" parent="Markers" unique_id=2000287939]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0.8, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_scale = 0.7
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="LeftLeg" type="Marker3D" parent="Markers" unique_id=1192598968]
+[node name="LeftLeg" type="Marker3D" parent="Markers" unique_id=737487369]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13, 0, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_scale = 0.7
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="RightLeg" type="Marker3D" parent="Markers" unique_id=1559215411]
+[node name="RightLeg" type="Marker3D" parent="Markers" unique_id=590384772]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_scale = 0.7
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
 [node name="Skeleton" type="Skeleton3D" parent="." unique_id=427622599]
 bones/0/name = "Root"
