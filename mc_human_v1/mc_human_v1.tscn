@@ -78,25 +78,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_hrkd0"]
-resource_name = "miku_bld_Mesh_1_001"
-_surfaces = [{
-"aabb": AABB(-0.28125, 1.46875, -0.28125, 0.5625, 0.5625, 0.5625),
-"attribute_data": PackedByteArray("ABAAPwBAAD4A8B8/AEAAPgAQAD8AwH8+APAfPwDAfz4AEEA/AEAAPgDwXz8AQAA+ABBAPwDAfz4A8F8/AMB/PgDwPz8AgP89ABAgPwCA/z0A8D8/AACAOQAQID8AAIA5APBfPwAAgDkAEEA/AACAOQDwXz8AgP89ABBAPwCA/z0AEGA/AEAAPgDwfz8AQAA+ABBgPwDAfz4A8H8/AMB/PgAQID8AQAA+APA/PwBAAD4AECA/AMB/PgDwPz8AwH8+"),
-"bone_aabbs": [AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(-0.28125, 1.46875, -0.28125, 0.5625, 0.56251, 0.5625)],
-"format": 34359745559,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcACAAJAAoACgAJAAsADAANAA4ADgANAA8AEAARABIAEgARABMAFAAVABYAFgAVABcA"),
-"material": SubResource("StandardMaterial3D_ph68p"),
-"name": "Material_0.001",
-"primitive": 3,
-"skin_data": PackedByteArray("AgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAA"),
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("AACQvgAAAkAAAJC+AACQvgAAAkAAAJA+AACQvgAAvD8AAJC+AACQvgAAvD8AAJA+AACQPgAAAkAAAJA+AACQPgAAAkAAAJC+AACQPgAAvD8AAJA+AACQPgAAvD8AAJC+AACQPgAAAkAAAJA+AACQvgAAAkAAAJA+AACQPgAAAkAAAJC+AACQvgAAAkAAAJC+AACQPgAAvD8AAJC+AACQvgAAvD8AAJC+AACQPgAAvD8AAJA+AACQvgAAvD8AAJA+AACQPgAAAkAAAJC+AACQvgAAAkAAAJC+AACQPgAAvD8AAJC+AACQvgAAvD8AAJC+AACQvgAAAkAAAJA+AACQPgAAAkAAAJA+AACQvgAAvD8AAJA+AACQPgAAvD8AAJA+AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7////9//////////3//////////f/////////9///////9///////+//3///////7//f///////v/9///////+//38AAP///z//fwAA////P/9/AAD///8//38AAP///z//////AAD/v/////8AAP+//////wAA/7//////AAD/v/9//3////+//3//f////7//f/9/////v/9//3////+/")
-}]
-blend_shape_mode = 0
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_1qeph"]
 resource_name = "miku_bld_Mesh_0_001"
 _surfaces = [{
@@ -113,6 +94,25 @@ _surfaces = [{
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
 "vertex_data": PackedByteArray("AACAvgAAAEAAAIC+AACAvgAAAEAAAIA+AACAvgAAwD8AAIC+AACAvgAAwD8AAIA+AACAPgAAAEAAAIA+AACAPgAAAEAAAIC+AACAPgAAwD8AAIA+AACAPgAAwD8AAIC+AACAPgAAAEAAAIA+AACAvgAAAEAAAIA+AACAPgAAAEAAAIC+AACAvgAAAEAAAIC+AACAPgAAwD8AAIC+AACAvgAAwD8AAIC+AACAPgAAwD8AAIA+AACAvgAAwD8AAIA+AACAPgAAAEAAAIC+AACAvgAAAEAAAIC+AACAPgAAwD8AAIC+AACAvgAAwD8AAIC+AACAvgAAAEAAAIA+AACAPgAAAEAAAIA+AACAvgAAwD8AAIA+AACAPgAAwD8AAIA+AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7////9//////////3//////////f/////////9///////9///////+//3///////7//f///////v/9///////+//38AAP///z//fwAA////P/9/AAD///8//38AAP///z//////AAD/v/////8AAP+//////wAA/7//////AAD/v/9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hrkd0"]
+resource_name = "miku_bld_Mesh_1_001"
+_surfaces = [{
+"aabb": AABB(-0.28125, 1.46875, -0.28125, 0.5625, 0.5625, 0.5625),
+"attribute_data": PackedByteArray("ABAAPwBAAD4A8B8/AEAAPgAQAD8AwH8+APAfPwDAfz4AEEA/AEAAPgDwXz8AQAA+ABBAPwDAfz4A8F8/AMB/PgDwPz8AgP89ABAgPwCA/z0A8D8/AACAOQAQID8AAIA5APBfPwAAgDkAEEA/AACAOQDwXz8AgP89ABBAPwCA/z0AEGA/AEAAPgDwfz8AQAA+ABBgPwDAfz4A8H8/AMB/PgAQID8AQAA+APA/PwBAAD4AECA/AMB/PgDwPz8AwH8+"),
+"bone_aabbs": [AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(-0.28125, 1.46875, -0.28125, 0.5625, 0.56251, 0.5625)],
+"format": 34359745559,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMABAAFAAYABgAFAAcACAAJAAoACgAJAAsADAANAA4ADgANAA8AEAARABIAEgARABMAFAAVABYAFgAVABcA"),
+"material": SubResource("StandardMaterial3D_ph68p"),
+"name": "Material_0.001",
+"primitive": 3,
+"skin_data": PackedByteArray("AgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAAAgAAAAAAAAD//wAAAAAAAAIAAAAAAAAA//8AAAAAAAACAAAAAAAAAP//AAAAAAAA"),
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AACQvgAAAkAAAJC+AACQvgAAAkAAAJA+AACQvgAAvD8AAJC+AACQvgAAvD8AAJA+AACQPgAAAkAAAJA+AACQPgAAAkAAAJC+AACQPgAAvD8AAJA+AACQPgAAvD8AAJC+AACQPgAAAkAAAJA+AACQvgAAAkAAAJA+AACQPgAAAkAAAJC+AACQvgAAAkAAAJC+AACQPgAAvD8AAJC+AACQvgAAvD8AAJC+AACQPgAAvD8AAJA+AACQvgAAvD8AAJA+AACQPgAAAkAAAJC+AACQvgAAAkAAAJC+AACQPgAAvD8AAJC+AACQvgAAvD8AAJC+AACQvgAAAkAAAJA+AACQPgAAAkAAAJA+AACQvgAAvD8AAJA+AACQPgAAvD8AAJA+AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7////9//////////3//////////f/////////9///////9///////+//3///////7//f///////v/9///////+//38AAP///z//fwAA////P/9/AAD///8//38AAP///z//////AAD/v/////8AAP+//////wAA/7//////AAD/v/9//3////+//3//f////7//f/9/////v/9//3////+/")
 }]
 blend_shape_mode = 0
 
@@ -280,7 +280,8 @@ script = ExtResource("1_nfcce")
 [node name="McHumanV1Tool" type="Node3D" parent="." unique_id=628655541 node_paths=PackedStringArray("skin_mesh_list")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0954869, 0)
 script = ExtResource("2_obwld")
-skin_mesh_list = [NodePath("../Skeleton/MeshRoot/Body"), NodePath("../Skeleton/MeshRoot/Body Layer"), NodePath("../Skeleton/MeshRoot/Hat Layer"), NodePath("../Skeleton/MeshRoot/Head"), NodePath("../Skeleton/MeshRoot/Left Arm"), NodePath("../Skeleton/MeshRoot/Left Arm Layer"), NodePath("../Skeleton/MeshRoot/Left Leg"), NodePath("../Skeleton/MeshRoot/Left Leg Layer"), NodePath("../Skeleton/MeshRoot/Right Arm"), NodePath("../Skeleton/MeshRoot/Right Arm Layer"), NodePath("../Skeleton/MeshRoot/Right Leg"), NodePath("../Skeleton/MeshRoot/Right Leg Layer")]
+skin_mesh_list = [NodePath("../MeshRoot/Body/Body"), NodePath("../MeshRoot/Body/Body Layer"), NodePath("../MeshRoot/Head/Hat Layer"), NodePath("../MeshRoot/Head/Head"), NodePath("../MeshRoot/LeftArm/Left Arm"), NodePath("../MeshRoot/LeftArm/Left Arm Layer"), NodePath("../MeshRoot/LeftLeg/Left Leg"), NodePath("../MeshRoot/LeftLeg/Left Leg Layer"), NodePath("../MeshRoot/RightArm/Right Arm"), NodePath("../MeshRoot/RightArm/Right Arm Layer"), NodePath("../MeshRoot/RightLeg/Right Leg"), NodePath("../MeshRoot/RightLeg/Right Leg Layer")]
+gizmo_color = Color(0.828125, 0.828125, 0.828125, 1)
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
@@ -290,14 +291,16 @@ metadata/_edit_lock_ = true
 [node name="Eyes" type="Node3D" parent="ActionController" unique_id=732216018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(0.7176471, 0.37254903, 0.45882353, 1)
+gizmo_color = Color(1, 0, 0, 1)
+gizmo_opacity = 0.6
 gizmo_size = Vector3(0.1, 0.1, 0.1)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
 [node name="Neck" type="Node3D" parent="ActionController" unique_id=482250678]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4757924, 0)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(2.4546682e-06, 0.7910037, 0.4262218, 1)
+gizmo_color = Color(0, 1, 0.0625, 1)
+gizmo_opacity = 0.6
 gizmo_scale = 1.2
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
@@ -305,14 +308,16 @@ metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 [node name="Hips" type="Node3D" parent="ActionController" unique_id=1660592985]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(2.4546682e-06, 0.7910037, 0.4262218, 1)
-gizmo_size = Vector3(0.5, 0.1, 0.5)
+gizmo_color = Color(0, 1, 0.0625, 1)
+gizmo_opacity = 0.6
+gizmo_size = Vector3(0.5, 0.1, 0.4)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
 [node name="LeftArm" type="Node3D" parent="ActionController" unique_id=1089162478]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.3, 0.8, 0)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_color = Color(1, 0.5483871, 0, 1)
+gizmo_opacity = 0.6
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
@@ -320,7 +325,8 @@ metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 [node name="RightArm" type="Node3D" parent="ActionController" unique_id=738574677]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0.8, 0)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_color = Color(1, 0.5483871, 0, 1)
+gizmo_opacity = 0.6
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
@@ -328,7 +334,8 @@ metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 [node name="LeftLeg" type="Node3D" parent="ActionController" unique_id=1692108542]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13, 0, 0)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_color = Color(1, 0.5483871, 0, 1)
+gizmo_opacity = 0.6
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
@@ -336,10 +343,122 @@ metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 [node name="RightLeg" type="Node3D" parent="ActionController" unique_id=768055903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0, 0)
 script = ExtResource("1_1fpko")
-gizmo_color = Color(0.97377247, 0.5321214, 0, 1)
+gizmo_color = Color(1, 0.5483871, 0, 1)
+gizmo_opacity = 0.6
 gizmo_scale = 0.7
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="LeftArmRt" type="Node3D" parent="ActionController" unique_id=53127429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.373, 1.38, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.6171875, 0, 1, 1)
+gizmo_opacity = 0.6
+gizmo_scale = 0.6
+gizmo_size = Vector3(0.3, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="RightArmRt" type="Node3D" parent="ActionController" unique_id=340129349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.373, 1.38, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.6171875, 0, 1, 1)
+gizmo_opacity = 0.6
+gizmo_scale = 0.6
+gizmo_size = Vector3(0.3, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="LeftLegRt" type="Node3D" parent="ActionController" unique_id=1801595645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13, 0.7, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.6171875, 0, 1, 1)
+gizmo_opacity = 0.6
+gizmo_scale = 0.6
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="RightLegRt" type="Node3D" parent="ActionController" unique_id=628699552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.7, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(0.6171875, 0, 1, 1)
+gizmo_opacity = 0.6
+gizmo_scale = 0.6
+gizmo_size = Vector3(0.5, 0.1, 0.5)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="MeshRoot" type="Node3D" parent="." unique_id=274989098]
+metadata/_edit_lock_ = true
+
+[node name="Body" type="Node3D" parent="MeshRoot" unique_id=425124971]
+
+[node name="Body" type="MeshInstance3D" parent="MeshRoot/Body" unique_id=1673791050]
+mesh = SubResource("ArrayMesh_etsva")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Body Layer" type="MeshInstance3D" parent="MeshRoot/Body" unique_id=1770945883]
+mesh = SubResource("ArrayMesh_lg8fi")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Head" type="Node3D" parent="MeshRoot" unique_id=72635818]
+
+[node name="Head" type="MeshInstance3D" parent="MeshRoot/Head" unique_id=603971285]
+mesh = SubResource("ArrayMesh_1qeph")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Hat Layer" type="MeshInstance3D" parent="MeshRoot/Head" unique_id=426968163]
+mesh = SubResource("ArrayMesh_hrkd0")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="LeftArm" type="Node3D" parent="MeshRoot" unique_id=319011596]
+
+[node name="Left Arm" type="MeshInstance3D" parent="MeshRoot/LeftArm" unique_id=837632608]
+mesh = SubResource("ArrayMesh_1kgf2")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Left Arm Layer" type="MeshInstance3D" parent="MeshRoot/LeftArm" unique_id=54242893]
+mesh = SubResource("ArrayMesh_2xr38")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="LeftLeg" type="Node3D" parent="MeshRoot" unique_id=398804143]
+
+[node name="Left Leg" type="MeshInstance3D" parent="MeshRoot/LeftLeg" unique_id=2118958687]
+mesh = SubResource("ArrayMesh_hbtqe")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Left Leg Layer" type="MeshInstance3D" parent="MeshRoot/LeftLeg" unique_id=218534936]
+mesh = SubResource("ArrayMesh_hvv2d")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="RightArm" type="Node3D" parent="MeshRoot" unique_id=616758865]
+
+[node name="Right Arm" type="MeshInstance3D" parent="MeshRoot/RightArm" unique_id=2125181082]
+mesh = SubResource("ArrayMesh_geylf")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Right Arm Layer" type="MeshInstance3D" parent="MeshRoot/RightArm" unique_id=1633786890]
+mesh = SubResource("ArrayMesh_30u57")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="RightLeg" type="Node3D" parent="MeshRoot" unique_id=69155723]
+
+[node name="Right Leg" type="MeshInstance3D" parent="MeshRoot/RightLeg" unique_id=7770001]
+mesh = SubResource("ArrayMesh_753fa")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
+
+[node name="Right Leg Layer" type="MeshInstance3D" parent="MeshRoot/RightLeg" unique_id=602480890]
+mesh = SubResource("ArrayMesh_65y8d")
+skin = SubResource("Skin_ci4ed")
+skeleton = NodePath("../../../Skeleton")
 
 [node name="Skeleton" type="Skeleton3D" parent="." unique_id=427622599]
 bones/0/name = "Root"
@@ -392,70 +511,6 @@ bones/6/position = Vector3(-0.13, 0.6986794, 0)
 bones/6/rotation = Quaternion(0.70710677, 0, -0.70710677, 0)
 bones/6/scale = Vector3(1, 0.99999994, 1)
 metadata/_edit_lock_ = true
-
-[node name="MeshRoot" type="Node3D" parent="Skeleton" unique_id=274989098]
-unique_name_in_owner = true
-metadata/_edit_lock_ = true
-
-[node name="Body" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=1673791050]
-mesh = SubResource("ArrayMesh_etsva")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Body Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=1770945883]
-mesh = SubResource("ArrayMesh_lg8fi")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Hat Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=426968163]
-mesh = SubResource("ArrayMesh_hrkd0")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Head" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=603971285]
-mesh = SubResource("ArrayMesh_1qeph")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Left Arm" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=837632608]
-mesh = SubResource("ArrayMesh_1kgf2")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Left Arm Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=54242893]
-mesh = SubResource("ArrayMesh_2xr38")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Left Leg" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=2118958687]
-mesh = SubResource("ArrayMesh_hbtqe")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Left Leg Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=218534936]
-mesh = SubResource("ArrayMesh_hvv2d")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Right Arm" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=2125181082]
-mesh = SubResource("ArrayMesh_geylf")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Right Arm Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=1633786890]
-mesh = SubResource("ArrayMesh_30u57")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Right Leg" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=7770001]
-mesh = SubResource("ArrayMesh_753fa")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
-
-[node name="Right Leg Layer" type="MeshInstance3D" parent="Skeleton/MeshRoot" unique_id=602480890]
-mesh = SubResource("ArrayMesh_65y8d")
-skin = SubResource("Skin_ci4ed")
-skeleton = NodePath("../..")
 
 [node name="CCDIKHips" type="CCDIK3D" parent="Skeleton" unique_id=1448582848]
 setting_count = 1
