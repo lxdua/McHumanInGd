@@ -1,8 +1,9 @@
 [gd_scene format=4 uid="uid://c4dxttpt8mx55"]
 
 [ext_resource type="Script" uid="uid://gx0b8b3sgj8u" path="res://addons/better_marker_3d/better_marker_3d.gd" id="1_1fpko"]
+[ext_resource type="Script" uid="uid://5b0i7p2521cu" path="res://mc_human_v1/mc_human_v1.gd" id="1_nfcce"]
 [ext_resource type="Texture2D" uid="uid://dj503eh8he7xx" path="res://mc_human_v1/miku_skin.png" id="2_1fpko"]
-[ext_resource type="Script" uid="uid://d252swglxmudf" path="res://mc_human_v1/mc_human_v_1_tool.gd" id="2_obwld"]
+[ext_resource type="Script" uid="uid://d252swglxmudf" path="res://mc_human_v1/mc_human_v1_tool.gd" id="2_obwld"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph68p"]
 resource_name = "Material_0.001"
@@ -274,6 +275,7 @@ angle = 1.0471976
 angle = 4.537856
 
 [node name="McHumanV1" type="Node3D" unique_id=1371768775]
+script = ExtResource("1_nfcce")
 
 [node name="McHumanV1Tool" type="Node3D" parent="." unique_id=628655541]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0954869, 0)

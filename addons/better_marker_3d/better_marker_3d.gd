@@ -7,26 +7,26 @@ const DITHER_DISSOLVE = preload("uid://bjxu52j7wjk18")
 @export_group("Gizmo Properties")
 
 @export var gizmo_color: Color = Color.DARK_GRAY:
-	set(v):
-		gizmo_color = v
+	set(value):
+		gizmo_color = value
 		update_material()
 		update_gizmos()
 
 @export_range(0, 1) var gizmo_opacity: float = 0.8:
-	set(v):
-		gizmo_opacity = v
+	set(value):
+		gizmo_opacity = value
 		update_material()
 		update_gizmos()
 
 @export var gizmo_scale: float = 1.0:
-	set(v):
-		gizmo_scale = max(v, 0.0)
+	set(value):
+		gizmo_scale = max(value, 0.0)
 		update_mesh()
 		update_gizmos()
 
 @export var gizmo_size: Vector3 = Vector3(0.5, 0.5, 0.5):
-	set(v):
-		gizmo_size =  v.clamp(Vector3.ZERO, Vector3.ONE)
+	set(value):
+		gizmo_size =  value.clamp(Vector3.ZERO, Vector3.ONE)
 		update_mesh()
 		update_gizmos()
 

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cckkatpgis5at"]
+
+[ext_resource type="Script" uid="uid://bmjicd4dbgs55" path="res://mc_item_v1/mc_item_v1.gd" id="1_hut4e"]
+[ext_resource type="Script" uid="uid://b1bnln45nqiae" path="res://mc_item_v1/mc_item_v1_tool.gd" id="2_niyq1"]
+[ext_resource type="Script" uid="uid://dxpjffo1jo2v7" path="res://mc_item_v1/item_animated_mesh.gd" id="3_2q6pj"]
+
+[node name="McItemV1" type="Node3D" unique_id=439447647]
+script = ExtResource("1_hut4e")
+
+[node name="McItemV1Tool" type="Node" parent="." unique_id=303708314]
+script = ExtResource("2_niyq1")
+
+[node name="McItemAnimatedMesh" type="MeshInstance3D" parent="." unique_id=316351954]
+unique_name_in_owner = true
+script = ExtResource("3_2q6pj")
