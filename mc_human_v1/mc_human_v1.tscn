@@ -277,9 +277,10 @@ angle = 4.537856
 [node name="McHumanV1" type="Node3D" unique_id=1371768775]
 script = ExtResource("1_nfcce")
 
-[node name="McHumanV1Tool" type="Node3D" parent="." unique_id=628655541]
+[node name="McHumanV1Tool" type="Node3D" parent="." unique_id=628655541 node_paths=PackedStringArray("skin_mesh_list")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0954869, 0)
 script = ExtResource("2_obwld")
+skin_mesh_list = [NodePath("../Skeleton/MeshRoot/Body"), NodePath("../Skeleton/MeshRoot/Body Layer"), NodePath("../Skeleton/MeshRoot/Hat Layer"), NodePath("../Skeleton/MeshRoot/Head"), NodePath("../Skeleton/MeshRoot/Left Arm"), NodePath("../Skeleton/MeshRoot/Left Arm Layer"), NodePath("../Skeleton/MeshRoot/Left Leg"), NodePath("../Skeleton/MeshRoot/Left Leg Layer"), NodePath("../Skeleton/MeshRoot/Right Arm"), NodePath("../Skeleton/MeshRoot/Right Arm Layer"), NodePath("../Skeleton/MeshRoot/Right Leg"), NodePath("../Skeleton/MeshRoot/Right Leg Layer")]
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
