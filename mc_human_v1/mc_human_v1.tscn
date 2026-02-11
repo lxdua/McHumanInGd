@@ -614,6 +614,7 @@ bone_name = "ArmL"
 bone = 3
 forward_axis = 2
 primary_rotation_axis = 0
+origin_offset = Vector3(-0.05, 0, 0)
 duration = 0.1
 metadata/_edit_lock_ = true
 
@@ -623,6 +624,7 @@ bone_name = "ArmR"
 bone = 4
 forward_axis = 2
 primary_rotation_axis = 0
+origin_offset = Vector3(0.05, 0, 0)
 duration = 0.1
 metadata/_edit_lock_ = true
 
@@ -632,7 +634,18 @@ bone_name = "LegL"
 bone = 5
 forward_axis = 2
 primary_rotation_axis = 0
+origin_offset = Vector3(-0.04, 0, 0)
 duration = 0.1
+use_angle_limitation = true
+symmetry_limitation = false
+primary_positive_limit_angle = 1.2217305
+primary_positive_damp_threshold = 1.0
+primary_negative_limit_angle = 1.7453293
+primary_negative_damp_threshold = 1.0
+secondary_positive_limit_angle = 1.5707964
+secondary_positive_damp_threshold = 1.0
+secondary_negative_limit_angle = 1.0471976
+secondary_negative_damp_threshold = 1.0
 metadata/_edit_lock_ = true
 
 [node name="LamRightLeg" type="LookAtModifier3D" parent="Skeleton" unique_id=23221907]
@@ -641,10 +654,22 @@ bone_name = "LegR"
 bone = 6
 forward_axis = 2
 primary_rotation_axis = 0
+origin_offset = Vector3(0.04, 0, 0)
 duration = 0.1
+use_angle_limitation = true
+symmetry_limitation = false
+primary_positive_limit_angle = 1.7453293
+primary_positive_damp_threshold = 1.0
+primary_negative_limit_angle = 1.2217305
+primary_negative_damp_threshold = 1.0
+secondary_positive_limit_angle = 1.5707964
+secondary_positive_damp_threshold = 1.0
+secondary_negative_limit_angle = 1.0471976
+secondary_negative_damp_threshold = 1.0
 metadata/_edit_lock_ = true
 
 [node name="RemotePosition" type="Node3D" parent="." unique_id=1889773941]
+metadata/_edit_lock_ = true
 
 [node name="LeftArmRP" type="Node3D" parent="RemotePosition" unique_id=1121434774 node_paths=PackedStringArray("target_node", "reference_node")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.373, 1.38, 0)
