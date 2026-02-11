@@ -5,6 +5,19 @@
 [ext_resource type="Texture2D" uid="uid://dj503eh8he7xx" path="res://mc_human_v1/miku_skin.png" id="2_1fpko"]
 [ext_resource type="Script" uid="uid://d252swglxmudf" path="res://mc_human_v1/mc_human_v1_tool.gd" id="2_obwld"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfcce"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+disable_specular_occlusion = true
+albedo_texture = ExtResource("2_1fpko")
+roughness = 0.0
+texture_filter = 2
+texture_repeat = false
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph68p"]
 resource_name = "Material_0.001"
 transparency = 2
@@ -280,6 +293,7 @@ script = ExtResource("1_nfcce")
 [node name="McHumanV1Tool" type="Node3D" parent="." unique_id=628655541 node_paths=PackedStringArray("skin_mesh_list")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0954869, 0)
 script = ExtResource("2_obwld")
+skin_material = SubResource("StandardMaterial3D_nfcce")
 skin_mesh_list = [NodePath("../MeshRoot/Body/Body"), NodePath("../MeshRoot/Body/Body Layer"), NodePath("../MeshRoot/Head/Hat Layer"), NodePath("../MeshRoot/Head/Head"), NodePath("../MeshRoot/LeftArm/Left Arm"), NodePath("../MeshRoot/LeftArm/Left Arm Layer"), NodePath("../MeshRoot/LeftLeg/Left Leg"), NodePath("../MeshRoot/LeftLeg/Left Leg Layer"), NodePath("../MeshRoot/RightArm/Right Arm"), NodePath("../MeshRoot/RightArm/Right Arm Layer"), NodePath("../MeshRoot/RightLeg/Right Leg"), NodePath("../MeshRoot/RightLeg/Right Leg Layer")]
 gizmo_color = Color(0.828125, 0.828125, 0.828125, 1)
 gizmo_size = Vector3(0.5, 0.1, 0.5)
@@ -394,11 +408,13 @@ metadata/_edit_lock_ = true
 mesh = SubResource("ArrayMesh_etsva")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Body Layer" type="MeshInstance3D" parent="MeshRoot/Body" unique_id=1770945883]
 mesh = SubResource("ArrayMesh_lg8fi")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Head" type="Node3D" parent="MeshRoot" unique_id=72635818]
 
@@ -406,11 +422,13 @@ skeleton = NodePath("../../../Skeleton")
 mesh = SubResource("ArrayMesh_1qeph")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Hat Layer" type="MeshInstance3D" parent="MeshRoot/Head" unique_id=426968163]
 mesh = SubResource("ArrayMesh_hrkd0")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="LeftArm" type="Node3D" parent="MeshRoot" unique_id=319011596]
 
@@ -418,11 +436,13 @@ skeleton = NodePath("../../../Skeleton")
 mesh = SubResource("ArrayMesh_1kgf2")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Left Arm Layer" type="MeshInstance3D" parent="MeshRoot/LeftArm" unique_id=54242893]
 mesh = SubResource("ArrayMesh_2xr38")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="LeftLeg" type="Node3D" parent="MeshRoot" unique_id=398804143]
 
@@ -430,11 +450,13 @@ skeleton = NodePath("../../../Skeleton")
 mesh = SubResource("ArrayMesh_hbtqe")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Left Leg Layer" type="MeshInstance3D" parent="MeshRoot/LeftLeg" unique_id=218534936]
 mesh = SubResource("ArrayMesh_hvv2d")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="RightArm" type="Node3D" parent="MeshRoot" unique_id=616758865]
 
@@ -442,11 +464,13 @@ skeleton = NodePath("../../../Skeleton")
 mesh = SubResource("ArrayMesh_geylf")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Right Arm Layer" type="MeshInstance3D" parent="MeshRoot/RightArm" unique_id=1633786890]
 mesh = SubResource("ArrayMesh_30u57")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="RightLeg" type="Node3D" parent="MeshRoot" unique_id=69155723]
 
@@ -454,11 +478,13 @@ skeleton = NodePath("../../../Skeleton")
 mesh = SubResource("ArrayMesh_753fa")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Right Leg Layer" type="MeshInstance3D" parent="MeshRoot/RightLeg" unique_id=602480890]
 mesh = SubResource("ArrayMesh_65y8d")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
+surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Skeleton" type="Skeleton3D" parent="." unique_id=427622599]
 bones/0/name = "Root"

@@ -1,9 +1,16 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dtvwc0h2qym6t"]
 
+[ext_resource type="Texture2D" uid="uid://dj503eh8he7xx" path="res://mc_human_v1/miku_skin.png" id="1_sglg8"]
+
 [resource]
 transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 cull_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+disable_specular_occlusion = true
+albedo_texture = ExtResource("1_sglg8")
+roughness = 0.0
 texture_filter = 2
 texture_repeat = false
