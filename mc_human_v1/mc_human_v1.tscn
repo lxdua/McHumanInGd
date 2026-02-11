@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://5b0i7p2521cu" path="res://mc_human_v1/mc_human_v1.gd" id="1_nfcce"]
 [ext_resource type="Texture2D" uid="uid://dj503eh8he7xx" path="res://mc_human_v1/miku_skin.png" id="2_1fpko"]
 [ext_resource type="Script" uid="uid://d252swglxmudf" path="res://mc_human_v1/mc_human_v1_tool.gd" id="2_obwld"]
+[ext_resource type="Script" uid="uid://dfh56i4unmtpw" path="res://remote_position_3d/remote_position_3d.gd" id="5_xln4j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfcce"]
 transparency = 2
@@ -306,7 +307,7 @@ metadata/_edit_lock_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1)
 script = ExtResource("1_1fpko")
 gizmo_color = Color(1, 0, 0, 1)
-gizmo_opacity = 0.6
+gizmo_opacity = 0.7
 gizmo_size = Vector3(0.1, 0.1, 0.1)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
@@ -319,13 +320,19 @@ gizmo_scale = 1.2
 gizmo_size = Vector3(0.5, 0.1, 0.5)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
-[node name="Hips" type="Node3D" parent="ActionController" unique_id=1660592985]
+[node name="Chest" type="Node3D" parent="ActionController/Neck" unique_id=2112173255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.2)
+
+[node name="Waist" type="Node3D" parent="ActionController" unique_id=1660592985]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 script = ExtResource("1_1fpko")
 gizmo_color = Color(0, 1, 0.0625, 1)
 gizmo_opacity = 0.6
 gizmo_size = Vector3(0.5, 0.1, 0.4)
 metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
+
+[node name="Hips" type="Node3D" parent="ActionController/Waist" unique_id=145983720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2)
 
 [node name="LeftArm" type="Node3D" parent="ActionController" unique_id=1089162478]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.3, 0.8, 0)
@@ -538,9 +545,17 @@ bones/6/rotation = Quaternion(0.70710677, 0, -0.70710677, 0)
 bones/6/scale = Vector3(1, 0.99999994, 1)
 metadata/_edit_lock_ = true
 
-[node name="CCDIKHips" type="CCDIK3D" parent="Skeleton" unique_id=1448582848]
+[node name="LamHips" type="LookAtModifier3D" parent="Skeleton" unique_id=276470892]
+target_node = NodePath("../../ActionController/Waist/Hips")
+bone_name = "Root"
+bone = 0
+forward_axis = 5
+origin_offset = Vector3(0, 0.8, 0)
+metadata/_edit_lock_ = true
+
+[node name="CCDIKWaist" type="CCDIK3D" parent="Skeleton" unique_id=1448582848]
 setting_count = 1
-settings/0/target_node = NodePath("../../ActionController/Hips")
+settings/0/target_node = NodePath("../../ActionController/Waist")
 settings/0/root_bone_name = "Root"
 settings/0/root_bone = 0
 settings/0/end_bone_name = "Body_2"
@@ -553,6 +568,12 @@ settings/0/joints/0/limitation/right_axis = 0
 settings/0/joints/0/limitation/rotation_offset = Quaternion(-0.1, 0, 0, 1)
 settings/0/joints/1/rotation_axis = 3
 settings/0/joints/1/limitation = null
+metadata/_edit_lock_ = true
+
+[node name="LamChest" type="LookAtModifier3D" parent="Skeleton" unique_id=1374809766]
+target_node = NodePath("../../ActionController/Neck/Chest")
+bone_name = "Body_2"
+bone = 1
 metadata/_edit_lock_ = true
 
 [node name="CCDIKNeck" type="CCDIK3D" parent="Skeleton" unique_id=1774866376]
@@ -615,3 +636,37 @@ bone = 6
 forward_axis = 2
 primary_rotation_axis = 0
 metadata/_edit_lock_ = true
+
+[node name="RemotePosition" type="Node3D" parent="." unique_id=1889773941]
+
+[node name="LeftArmRP" type="Node3D" parent="RemotePosition" unique_id=1121434774 node_paths=PackedStringArray("target_node", "reference_node")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.373, 1.38, 0)
+script = ExtResource("5_xln4j")
+target_node = NodePath("../../MeshRoot/LeftArm")
+reference_node = NodePath("../../ActionController/LeftArmRt")
+max_displacement_length = 0.1
+metadata/_custom_type_script = "uid://dfh56i4unmtpw"
+
+[node name="RightArmRP" type="Node3D" parent="RemotePosition" unique_id=1738764343 node_paths=PackedStringArray("target_node", "reference_node")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.373, 1.38, 0)
+script = ExtResource("5_xln4j")
+target_node = NodePath("../../MeshRoot/RightArm")
+reference_node = NodePath("../../ActionController/RightArmRt")
+max_displacement_length = 0.1
+metadata/_custom_type_script = "uid://dfh56i4unmtpw"
+
+[node name="LeftLegRP" type="Node3D" parent="RemotePosition" unique_id=2087866666 node_paths=PackedStringArray("target_node", "reference_node")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13, 0.7, 0)
+script = ExtResource("5_xln4j")
+target_node = NodePath("../../ActionController/LeftLegRt")
+reference_node = NodePath("../../ActionController/LeftLegRt")
+max_displacement_length = 0.1
+metadata/_custom_type_script = "uid://dfh56i4unmtpw"
+
+[node name="RightLegRP" type="Node3D" parent="RemotePosition" unique_id=601937839 node_paths=PackedStringArray("target_node", "reference_node")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.7, 0)
+script = ExtResource("5_xln4j")
+target_node = NodePath("../../MeshRoot/RightLeg")
+reference_node = NodePath("../../ActionController/RightLegRt")
+max_displacement_length = 0.1
+metadata/_custom_type_script = "uid://dfh56i4unmtpw"
