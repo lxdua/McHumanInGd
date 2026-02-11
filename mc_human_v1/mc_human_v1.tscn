@@ -292,7 +292,7 @@ angle = 4.537856
 script = ExtResource("1_nfcce")
 
 [node name="McHumanV1Tool" type="Node3D" parent="." unique_id=628655541 node_paths=PackedStringArray("skin_mesh_list")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0954869, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, 0)
 script = ExtResource("2_obwld")
 skin_material = SubResource("StandardMaterial3D_nfcce")
 skin_mesh_list = [NodePath("../MeshRoot/Body/Body"), NodePath("../MeshRoot/Body/Body Layer"), NodePath("../MeshRoot/Head/Hat Layer"), NodePath("../MeshRoot/Head/Head"), NodePath("../MeshRoot/LeftArm/Left Arm"), NodePath("../MeshRoot/LeftArm/Left Arm Layer"), NodePath("../MeshRoot/LeftLeg/Left Leg"), NodePath("../MeshRoot/LeftLeg/Left Leg Layer"), NodePath("../MeshRoot/RightArm/Right Arm"), NodePath("../MeshRoot/RightArm/Right Arm Layer"), NodePath("../MeshRoot/RightLeg/Right Leg"), NodePath("../MeshRoot/RightLeg/Right Leg Layer")]
@@ -322,6 +322,14 @@ metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
 [node name="Chest" type="Node3D" parent="ActionController/Neck" unique_id=2112173255]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="Top" type="Node3D" parent="ActionController/Neck" unique_id=1402893287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6742077, 0)
+script = ExtResource("1_1fpko")
+gizmo_color = Color(1, 0, 0, 1)
+gizmo_opacity = 0.7
+gizmo_size = Vector3(0.2, 0.1, 0.1)
+metadata/_custom_type_script = "uid://gx0b8b3sgj8u"
 
 [node name="Waist" type="Node3D" parent="ActionController" unique_id=1660592985]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
@@ -424,14 +432,17 @@ skeleton = NodePath("../../../Skeleton")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Head" type="Node3D" parent="MeshRoot" unique_id=72635818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.625, 0)
 
 [node name="Head" type="MeshInstance3D" parent="MeshRoot/Head" unique_id=603971285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.625, 0)
 mesh = SubResource("ArrayMesh_1qeph")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
 surface_material_override/0 = SubResource("StandardMaterial3D_nfcce")
 
 [node name="Hat Layer" type="MeshInstance3D" parent="MeshRoot/Head" unique_id=426968163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.625, 0)
 mesh = SubResource("ArrayMesh_hrkd0")
 skin = SubResource("Skin_ci4ed")
 skeleton = NodePath("../../../Skeleton")
@@ -593,6 +604,20 @@ settings/0/joints/0/limitation/right_axis = 0
 settings/0/joints/0/limitation/rotation_offset = Quaternion(0, 0, 0, 1)
 settings/0/joints/1/rotation_axis = 3
 settings/0/joints/1/limitation = null
+metadata/_edit_lock_ = true
+
+[node name="LamTop" type="LookAtModifier3D" parent="Skeleton" unique_id=1114059301]
+target_node = NodePath("../../ActionController/Neck/Top")
+bone_name = "Head_2"
+bone = 2
+forward_axis = 2
+primary_rotation_axis = 2
+use_secondary_rotation = false
+duration = 0.1
+use_angle_limitation = true
+symmetry_limitation = true
+primary_limit_angle = 2.443461
+primary_damp_threshold = 1.0
 metadata/_edit_lock_ = true
 
 [node name="LamEyes" type="LookAtModifier3D" parent="Skeleton" unique_id=1434595948]
