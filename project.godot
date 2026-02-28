@@ -11,15 +11,29 @@ config_version=5
 [application]
 
 config/name="McHumanInGd"
-config/features=PackedStringArray("4.6", "Forward Plus")
+run/main_scene="uid://dqpoi6vl3uyce"
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+run/max_fps=30
+run/low_processor_mode=true
+boot_splash/bg_color=Color(0.14117648, 0.14117648, 0.14117648, 0)
+boot_splash/show_image=false
 config/icon="res://misc/icon.svg"
 
 [display]
 
-window/size/viewport_width=2560
-window/size/viewport_height=1440
-window/size/window_width_override=1440
-window/size/window_height_override=810
+window/size/viewport_width=1024
+window/size/viewport_height=1024
+window/size/resizable=false
+window/size/borderless=true
+window/size/always_on_top=true
+window/size/transparent=true
+window/size/window_width_override=512
+window/size/window_height_override=512
+window/per_pixel_transparency/allowed=true
+
+[dotnet]
+
+project/assembly_name="McHumanInGd"
 
 [editor_plugins]
 
@@ -32,6 +46,9 @@ enabled=PackedStringArray("res://addons/better_marker_3d/plugin.cfg")
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 anti_aliasing/quality/msaa_2d=2
 anti_aliasing/quality/msaa_3d=2
+viewport/transparent_background=true
 anti_aliasing/quality/screen_space_aa=2

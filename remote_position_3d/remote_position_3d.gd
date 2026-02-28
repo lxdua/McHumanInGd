@@ -49,7 +49,16 @@ func _update_processing() -> void:
 	set_physics_process(update_mode == UpdateMode.UPDATE_PHYSICS_PROCESS)
 
 func _reset_state() -> void:
-	if not target_node or not reference_node:
+	# 确保当前节点及目标节点都在场景树中，再访问 global_position
+	if not is_inside_tree():
+		_initialized = false
+		return
+		
+	if not target_node or not target_node.is_inside_tree():
+		_initialized = false
+		return
+		
+	if not reference_node or not reference_node.is_inside_tree():
 		_initialized = false
 		return
 	
@@ -66,13 +75,17 @@ func _physics_process(_delta: float) -> void:
 		_update_position()
 
 func _update_position() -> void:
-	if not target_node or not reference_node:
+	if not is_inside_tree() or not target_node or not reference_node:
 		return
+		
 	var current_relative_vector := global_position - reference_node.global_position
 	var offset := _initial_relative_vector - current_relative_vector
+	
 	if invert_movement:
 		offset = -offset
+		
 	if max_displacement_length > 0.0:
 		if offset.length() > max_displacement_length:
 			offset = offset.limit_length(max_displacement_length)
+			
 	target_node.global_position = _initial_target_global_pos + offset
